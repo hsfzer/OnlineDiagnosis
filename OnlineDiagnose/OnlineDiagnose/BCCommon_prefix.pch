@@ -1,0 +1,22 @@
+//
+//  BCCommon_prefix.pch
+//  OnlineDiagnose
+//
+//  Created by AllenMa on 3/15/15.
+//  Copyright (c) 2015 AllenMa. All rights reserved.
+//
+
+#ifndef OnlineDiagnose_BCCommon_prefix_pch
+#define OnlineDiagnose_BCCommon_prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "CommonUtils.h"
+#import "CommonDefine.h"
+#import "UIKit+x.h"
+
+#define DECLARE_WEAK_SELF __typeof(&*self) __weak weakSelf = self
+#define DECLARE_STRONG_SELF __typeof(&*self) __strong strongSelf = weakSelf
+#endif
